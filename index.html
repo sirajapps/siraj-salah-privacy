@@ -1,241 +1,429 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - سراج الصلاة / Siraj Al Salah</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية | Privacy Policy | Datenschutzrichtlinie</title>
+  <meta name="description" content="Privacy Policy for Siraj Al Sala in Arabic, English, and German." />
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f7faf8;
-      --surface: #ffffff;
-      --text: #17201c;
-      --muted: #5d6b64;
-      --border: #dbe7e0;
-      --accent: #06705f;
+      --bg: #f6fbf9;
+      --card: #ffffff;
+      --text: #14201c;
+      --muted: #5c6f68;
+      --accent: #0f8f7b;
+      --accent-soft: #e5f5f1;
+      --border: #d9ebe5;
+      --warning-bg: #fff8e6;
+      --warning-border: #eddca9;
+      --shadow: 0 10px 30px rgba(15, 143, 123, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: var(--bg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #eefaf6 0, var(--bg) 44%, #f9fbfa 100%);
       color: var(--text);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.75;
+      line-height: 1.8;
     }
 
     main {
-      width: min(920px, calc(100% - 32px));
+      width: min(980px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 32px 0;
+      padding: 32px 0 56px;
     }
 
-    header,
-    section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 18px;
+    header {
+      background: linear-gradient(135deg, #0f8f7b, #0c6f62);
+      color: #fff;
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
     }
 
-    h1,
-    h2,
-    h3 {
-      margin: 0 0 12px;
-      line-height: 1.3;
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.25;
     }
 
-    h1 {
+    header p {
+      margin: 0;
+      color: rgba(255,255,255,.92);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
       color: var(--accent);
-      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      font-weight: 700;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      margin: 18px 0;
+      box-shadow: var(--shadow);
     }
 
     h2 {
-      font-size: 1.35rem;
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 28px;
     }
 
     h3 {
-      font-size: 1.05rem;
-      color: var(--accent);
-      margin-top: 20px;
+      margin: 26px 0 8px;
+      font-size: 20px;
+      color: #18332d;
     }
 
-    p {
-      margin: 0 0 14px;
+    p, li { font-size: 16px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0; padding-inline-start: 22px; }
+
+    .notice {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: #5a4613;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin: 16px 0;
     }
 
-    ul {
-      margin-top: 0;
-      padding-inline-start: 24px;
+    .meta {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
     }
 
-    .muted {
-      color: var(--muted);
-      font-weight: 600;
-    }
-
-    .contact {
-      border-top: 1px solid var(--border);
-      margin-top: 20px;
-      padding-top: 16px;
+    .pill {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.16);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.24);
+      font-size: 13px;
       font-weight: 700;
+    }
+
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    [dir="ltr"] { text-align: left; }
+    [dir="rtl"] { text-align: right; }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      margin-top: 28px;
+      font-size: 14px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101715;
+        --card: #17211e;
+        --text: #edf7f4;
+        --muted: #b4c5bf;
+        --accent: #62d7c3;
+        --accent-soft: #173530;
+        --border: #28433d;
+        --warning-bg: #2a2414;
+        --warning-border: #554822;
+        --shadow: 0 10px 30px rgba(0,0,0,.22);
+      }
+
+      body {
+        background: radial-gradient(circle at top, #15352f 0, var(--bg) 44%, #0f1413 100%);
+      }
+
+      h3 { color: #e5f4f0; }
+      .notice { color: #f5df98; }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>سراج الصلاة / Siraj Al Salah</h1>
-      <p class="muted">Last updated: 2026-06-27</p>
+      <h1>سياسة الخصوصية</h1>
+      <p>Privacy Policy for Siraj Al Sala — Arabic, English, and German.</p>
+      <div class="meta">
+        <span class="pill">آخر تحديث: 28 يونيو 2026</span>
+        <span class="pill">Last updated: 28 June 2026</span>
+        <span class="pill">Aktualisiert: 28. Juni 2026</span>
+      </div>
     </header>
 
-    <section dir="rtl" lang="ar">
-      <h2>سياسة الخصوصية لتطبيق سراج الصلاة</h2>
-      <p>نحترم خصوصيتك ونسعى إلى تقليل استخدام البيانات قدر الإمكان. توضّح هذه السياسة كيفية استخدام التطبيق للأذونات والبيانات والخدمات الخارجية.</p>
+    <nav aria-label="Language navigation">
+      <a href="#arabic">العربية</a>
+      <a href="#english" dir="ltr">English</a>
+      <a href="#german" dir="ltr">Deutsch</a>
+    </nav>
 
-      <h3>الموقع</h3>
-      <p>يستخدم التطبيق موقع الجهاز عند تفعيل الموقع لحساب مواقيت الصلاة وتحديد اتجاه القبلة وعرض اسم المدينة عند الحاجة.</p>
-      <p>يتم الحصول على الموقع من خدمات الموقع في نظام التشغيل، مثل خدمات الموقع في Android أو iOS. وقد يستخدم التطبيق خدمات الترميز الجغرافي الخاصة بالنظام لتحويل الإحداثيات إلى اسم مدينة أو للبحث عن مدينة. حسب نوع الجهاز، قد تتم معالجة ذلك بواسطة مزود النظام مثل Google على Android أو Apple على iOS.</p>
-      <p>تُحسب مواقيت الصلاة محليًا داخل التطبيق باستخدام الإحداثيات وطريقة الحساب المختارة، ولا يتم إرسال الإحداثيات إلى خادم خاص بمواقيت الصلاة.</p>
-      <p>قد يتم حفظ المدينة أو الإحداثيات المختارة محليًا على الجهاز لتسهيل الاستخدام لاحقًا. لا يطلب التطبيق إذن الموقع في الخلفية، ولا يتتبع موقع المستخدم بشكل مستمر.</p>
+    <section id="arabic" lang="ar" dir="rtl">
+      <h2>سياسة الخصوصية</h2>
+      <p><strong>آخر تحديث:</strong> 28 يونيو 2026</p>
 
-      <h3>مواقيت الصلاة والقبلة</h3>
-      <p>تُحسب مواقيت الصلاة واتجاه القبلة داخل التطبيق بناءً على موقع المستخدم أو المدينة المختارة والإعدادات التي يحددها المستخدم.</p>
+      <p>
+        تطبيق <strong>سراج الصلاة</strong> يحترم خصوصية المستخدمين. توضّح هذه السياسة كيف يتعامل التطبيق مع الأذونات والبيانات عند استخدام ميزات مثل مواقيت الصلاة، اتجاه القبلة، التقويم الهجري، القرآن، المشغل الصوتي، التنبيهات، والإعلانات المحدودة عند تفعيلها.
+      </p>
 
-      <h3>التنبيهات</h3>
-      <p>تُستخدم التنبيهات لإرسال تذكيرات الصلاة حسب إعدادات المستخدم. لا تُستخدم التنبيهات لجمع بيانات شخصية.</p>
+      <div class="notice">
+        هذه السياسة لا تدّعي أن التطبيق لا يستخدم أي بيانات مطلقاً. الهدف منها هو شرح البيانات والأذونات التي قد يحتاجها التطبيق أو خدمات الطرف الثالث المستخدمة داخله بشكل واضح.
+      </div>
 
-      <h3>الإعدادات والتخزين المحلي</h3>
-      <p>يتم حفظ تفضيلات المستخدم مثل اللغة، المظهر الأساسي، المدينة المختارة، وبعض إعدادات التطبيق محليًا على الجهاز.</p>
-
-      <h3>المحتوى القرآني والصوت</h3>
-      <p>يمكن قراءة القرآن داخل التطبيق. وقد يتصل التطبيق بخدمة MP3Quran.net عند استخدام ميزة تشغيل التلاوات، وذلك لغرض تشغيل الصوت فقط.</p>
-
-      <h3>الإعلانات</h3>
-      <p>التطبيق الأساسي مجاني للاستخدام. قد تظهر إعلانات كاملة الشاشة عند فتح بعض الصفحات مثل الإعدادات أو التقويم أو القبلة.</p>
-      <p>لا تظهر الإعلانات داخل قراءة القرآن، أو داخل مواقيت الصلاة، أو أثناء الأذان أو التنبيهات، أو أثناء تشغيل التلاوة.</p>
-      <p>إذا لم يكن الإعلان متاحًا، يتم فتح الصفحة المطلوبة مباشرة.</p>
-      <p>يتم عرض الإعلانات عبر Google AdMob. قد تجمع Google بعض معلومات الجهاز أو معرفات الإعلانات أو بيانات الاستخدام اللازمة لتقديم الإعلانات وقياس أدائها، وفقًا لسياسات Google وإعدادات المستخدم وموافقته.</p>
-
-      <h3>المشتريات والثيمات المميزة</h3>
-      <p>لا تتضمن هذه النسخة مشتريات داخل التطبيق. قد نضيف في إصدارات لاحقة ميزات تخصيص اختيارية مثل الثيمات المميزة.</p>
-      <p>إذا أضفنا ميزات تخصيص رقمية اختيارية لاحقًا، فسيتم استخدام نظام الدفع الرسمي للمتجر عند النشر على Google Play، وسيتم تحديث هذه السياسة عند الحاجة.</p>
-
-      <h3>مشاركة البيانات</h3>
-      <p>لا نبيع بيانات المستخدمين. لا يتم إرسال الإحداثيات إلى خادم خاص بمواقيت الصلاة. قد تتم معالجة بعض البيانات بواسطة خدمات خارجية عند استخدام ميزات محددة، مثل خدمات الموقع والترميز الجغرافي في نظام التشغيل، وخدمة MP3Quran.net للتلاوات، وخدمة Google AdMob للإعلانات.</p>
-
-      <h3>الخدمات الخارجية المستخدمة</h3>
+      <h3>1. البيانات والأذونات التي يستخدمها التطبيق</h3>
       <ul>
-        <li>خدمات الموقع والترميز الجغرافي في نظام التشغيل: للموقع واسم المدينة.</li>
-        <li>MP3Quran.net: لتشغيل تلاوات القرآن عند استخدام ميزة الصوت.</li>
-        <li>Google AdMob: لعرض الإعلانات الكاملة في الصفحات المحددة.</li>
+        <li><strong>الموقع:</strong> قد يستخدم التطبيق الموقع لتحديد المدينة، حساب مواقيت الصلاة، وتحديد اتجاه القبلة. يمكن تعطيل إذن الموقع من إعدادات الجهاز، لكن بعض الميزات قد لا تعمل بدقة عند تعطيله.</li>
+        <li><strong>الإشعارات:</strong> قد يستخدم التطبيق إذن الإشعارات لإرسال تنبيهات أوقات الصلاة أو التذكيرات.</li>
+        <li><strong>الاتصال بالإنترنت:</strong> قد يستخدم التطبيق الإنترنت لجلب البيانات، تشغيل أو تنزيل التلاوات الصوتية، تحديث مصادر المحتوى، أو فتح روابط خارجية. عند الاتصال بخدمات خارجية، قد تستقبل تلك الخدمات بيانات اتصال تقنية مثل عنوان IP ومعلومات الجهاز اللازمة لإتمام الطلب.</li>
+        <li><strong>التخزين المحلي:</strong> قد يحفظ التطبيق بعض التفضيلات محلياً على الجهاز، مثل اللغة، الثيم، إعدادات العرض، آخر موضع قراءة، أو تفضيلات التشغيل.</li>
       </ul>
 
-      <h3>تغييرات مستقبلية</h3>
-      <p>قد نقوم بتحديث هذه السياسة إذا أضفنا ميزات جديدة أو خدمات إضافية في المستقبل. سيتم تحديث هذه الصفحة عند حدوث تغييرات مهمة.</p>
+      <h3>2. الإعلانات و Google AdMob</h3>
+      <p>
+        قد يعرض التطبيق إعلانات محدودة باستخدام <strong>Google AdMob</strong>. قد تظهر الإعلانات الكاملة الشاشة عند فتح بعض الصفحات أو الخيارات غير الأساسية، مثل التقويم، القبلة، أو بعض صفحات الإعدادات الفرعية.
+      </p>
+      <p>
+        لا يتم عرض الإعلانات داخل صفحات القرآن، أو المشغل الصوتي، أو صفحة مواقيت الصلاة الرئيسية، أو عند تشغيل التطبيق مباشرة، أو أثناء الأذان أو التلاوة.
+      </p>
+      <p>
+        قد تكون الإعلانات معطّلة في بعض إصدارات الاختبار أو في بناء معيّن من التطبيق، لكن قد تبقى مكتبة Google Mobile Ads SDK مضمّنة داخل التطبيق لأغراض الإعداد أو التفعيل في إصدار لاحق.
+      </p>
+      <p>
+        عند وجود Google Mobile Ads SDK أو عند تفعيل الإعلانات، قد تقوم Google بمعالجة بيانات مثل معرّف الإعلانات، معلومات الجهاز، عنوان IP، تفاعلات المستخدم مع التطبيق، ومعلومات تشخيصية لأغراض عرض الإعلانات، التحليلات، الأمان، منع الاحتيال، وتحسين جودة الخدمة.
+      </p>
+      <p>
+        يمكن للمستخدم إدارة أو إعادة تعيين أو حذف معرّف الإعلانات من إعدادات Google على جهاز Android. يمكن الاطلاع على معلومات Google حول بيانات Google Mobile Ads SDK من خلال:
+        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>.
+      </p>
 
-      <p class="contact">للتواصل:<br>siraj.salah.app@gmail.com</p>
-    </section>
+      <h3>3. مشاركة البيانات</h3>
+      <p>
+        نحن كمطوّر للتطبيق لا نبيع بيانات المستخدمين. ومع ذلك، قد تتم معالجة أو مشاركة بعض البيانات بواسطة خدمات طرف ثالث مستخدمة داخل التطبيق، مثل Google AdMob عند وجود مكتبة الإعلانات أو عند تفعيل الإعلانات، وذلك لأغراض الإعلانات، التحليلات، الأمان، ومنع الاحتيال.
+      </p>
 
-    <section dir="ltr" lang="en">
-      <h2>Privacy Policy for Siraj Al Salah</h2>
-      <p>We respect your privacy and aim to minimize data use as much as possible. This policy explains how the app uses permissions, data, and external services.</p>
-
-      <h3>Location</h3>
-      <p>The app uses the device location, when enabled, to calculate prayer times, determine the Qibla direction, and show the city name when needed.</p>
-      <p>Location is obtained from the operating system location services, such as Android or iOS location services. The app may also use platform geocoding services to convert coordinates into a city name or to search for a city. Depending on the device, this may be handled by a system provider such as Google on Android or Apple on iOS.</p>
-      <p>Prayer times are calculated locally inside the app using the coordinates and the selected calculation method. Coordinates are not sent to a prayer-times server.</p>
-      <p>The selected city or coordinates may be stored locally on the device to make the app easier to use later. The app does not request background location access and does not continuously track the user’s location.</p>
-
-      <h3>Prayer times and Qibla</h3>
-      <p>Prayer times and Qibla direction are calculated inside the app based on the user’s location or selected city and the settings chosen by the user.</p>
-
-      <h3>Notifications</h3>
-      <p>Notifications are used to send prayer reminders according to the user’s settings. Notifications are not used to collect personal data.</p>
-
-      <h3>Settings and local storage</h3>
-      <p>User preferences such as language, basic appearance, selected city, and some app settings are stored locally on the device.</p>
-
-      <h3>Quran content and audio</h3>
-      <p>The Quran can be read inside the app. The app may connect to MP3Quran.net when Quran recitation streaming is used, only for audio playback.</p>
-
-      <h3>Ads</h3>
-      <p>The core app is free to use. Full-screen ads may appear when opening certain pages such as Settings, Calendar, or Qibla.</p>
-      <p>Ads are not shown while reading Quran, inside prayer times, during adhan or notifications, or during Quran audio playback.</p>
-      <p>If an ad is not available, the requested page opens normally.</p>
-      <p>Ads are provided through Google AdMob. Google may collect certain device information, advertising identifiers, or usage data needed to serve and measure ads, according to Google’s policies, user settings, and consent.</p>
-
-      <h3>Purchases and premium themes</h3>
-      <p>This version does not include in-app purchases. Optional customization features, such as premium themes, may be added in later releases.</p>
-      <p>If optional digital customization features are added later, the official store billing system will be used when distributed on Google Play, and this policy will be updated when needed.</p>
-
-      <h3>Data sharing</h3>
-      <p>We do not sell user data. Coordinates are not sent to a prayer-times server. Some data may be processed by external services when using specific features, such as operating system location/geocoding services, MP3Quran.net for recitations, and Google AdMob for ads.</p>
-
-      <h3>External services used</h3>
+      <h3>4. اختيارات المستخدم</h3>
       <ul>
-        <li>Operating system location and geocoding services: for location and city name.</li>
-        <li>MP3Quran.net: for Quran recitation streaming when audio is used.</li>
-        <li>Google AdMob: for full-screen ads in selected pages.</li>
+        <li>يمكن تعطيل إذن الموقع أو الإشعارات من إعدادات الجهاز.</li>
+        <li>يمكن إدارة معرّف الإعلانات أو إعادة تعيينه أو حذفه من إعدادات Google على Android.</li>
+        <li>قد يؤدي تعطيل بعض الأذونات إلى تقليل دقة بعض الميزات، مثل القبلة أو مواقيت الصلاة.</li>
       </ul>
 
-      <h3>Future changes</h3>
-      <p>We may update this policy if we add new features or additional services in the future. This page will be updated when important changes occur.</p>
+      <h3>5. الأطفال</h3>
+      <p>
+        التطبيق برنامج ديني عام يساعد على مواقيت الصلاة والعبادة مثل القبلة، التقويم الهجري، والقرآن. التطبيق ليس موجهاً خصيصاً للأطفال وحدهم، ولا نسعى إلى جمع بيانات الأطفال بشكل مقصود. يمكن للأسر إدارة أذونات الجهاز وإعداداته بما يناسب استخدامهم للتطبيق.
+      </p>
 
-      <p class="contact">Contact:<br>siraj.salah.app@gmail.com</p>
+      <h3>6. أمان البيانات</h3>
+      <p>
+        نسعى إلى استخدام البيانات اللازمة فقط لتشغيل ميزات التطبيق. لا يمكن ضمان الأمان الكامل لأي خدمة رقمية، لكننا نعمل على تقليل جمع البيانات غير الضرورية واستخدام خدمات موثوقة قدر الإمكان.
+      </p>
+
+      <h3>7. الروابط الخارجية</h3>
+      <p>
+        قد يحتوي التطبيق على روابط خارجية مثل صفحة سياسة الخصوصية أو مصادر المحتوى. عند فتح رابط خارجي، تخضع تلك الصفحة لسياسة الخصوصية الخاصة بها.
+      </p>
+
+      <h3>8. تغييرات سياسة الخصوصية</h3>
+      <p>
+        قد يتم تحديث هذه السياسة عند إضافة ميزات جديدة أو تغيير طريقة عمل التطبيق أو خدمات الطرف الثالث المستخدمة. سيتم نشر النسخة المحدثة في نفس رابط سياسة الخصوصية.
+      </p>
+
+      <h3>9. التواصل</h3>
+      <p>
+        لأي سؤال حول سياسة الخصوصية، يمكن التواصل مع المطوّر عبر صفحة التطبيق أو معلومات التواصل المتاحة في Google Play.
+      </p>
+
+      <div class="notice">
+        رابط سياسة الخصوصية الرسمي:
+        <a href="https://sirajapps.github.io/siraj-salah-privacy/">https://sirajapps.github.io/siraj-salah-privacy/</a>
+      </div>
     </section>
 
-    <section dir="ltr" lang="de">
-      <h2>Datenschutzerklärung für Siraj Al Salah</h2>
-      <p>Wir respektieren deine Privatsphäre und versuchen, die Datennutzung so gering wie möglich zu halten. Diese Richtlinie erklärt, wie die App Berechtigungen, Daten und externe Dienste verwendet.</p>
+    <section id="english" lang="en" dir="ltr">
+      <h2>Privacy Policy</h2>
+      <p><strong>Last updated:</strong> June 28, 2026</p>
 
-      <h3>Standort</h3>
-      <p>Die App verwendet den Gerätestandort, wenn dieser aktiviert ist, um Gebetszeiten zu berechnen, die Qibla-Richtung zu bestimmen und bei Bedarf den Städtenamen anzuzeigen.</p>
-      <p>Der Standort wird über die Standortdienste des Betriebssystems bezogen, zum Beispiel über Android- oder iOS-Standortdienste. Die App kann außerdem die Geocoding-Dienste der Plattform verwenden, um Koordinaten in einen Städtenamen umzuwandeln oder nach einer Stadt zu suchen. Je nach Gerät kann dies durch den Systemanbieter wie Google auf Android oder Apple auf iOS verarbeitet werden.</p>
-      <p>Die Gebetszeiten werden lokal in der App anhand der Koordinaten und der ausgewählten Berechnungsmethode berechnet. Die Koordinaten werden nicht an einen Gebetszeiten-Server gesendet.</p>
-      <p>Die ausgewählte Stadt oder die Koordinaten können lokal auf dem Gerät gespeichert werden, um die spätere Nutzung zu erleichtern. Die App fordert keinen Standortzugriff im Hintergrund an und verfolgt den Standort des Nutzers nicht dauerhaft.</p>
+      <p>
+        <strong>Siraj Al Sala</strong> respects user privacy. This policy explains how the app handles permissions and data when using features such as prayer times, Qibla direction, Hijri calendar, Quran features, audio playback, notifications, and limited ads when enabled.
+      </p>
 
-      <h3>Gebetszeiten und Qibla</h3>
-      <p>Gebetszeiten und Qibla-Richtung werden innerhalb der App anhand des Standorts oder der ausgewählten Stadt sowie der vom Nutzer gewählten Einstellungen berechnet.</p>
+      <div class="notice">
+        This policy does not claim that the app never uses any data. Its purpose is to clearly explain the data and permissions that may be needed by the app or by third-party services used in the app.
+      </div>
 
-      <h3>Benachrichtigungen</h3>
-      <p>Benachrichtigungen werden verwendet, um Gebetserinnerungen gemäß den Einstellungen des Nutzers zu senden. Benachrichtigungen werden nicht zur Erfassung personenbezogener Daten verwendet.</p>
-
-      <h3>Einstellungen und lokale Speicherung</h3>
-      <p>Nutzereinstellungen wie Sprache, grundlegende Darstellung, ausgewählte Stadt und einige App-Einstellungen werden lokal auf dem Gerät gespeichert.</p>
-
-      <h3>Quran-Inhalte und Audio</h3>
-      <p>Der Quran kann in der App gelesen werden. Die App kann sich mit MP3Quran.net verbinden, wenn Quran-Rezitationen gestreamt werden, ausschließlich zur Audiowiedergabe.</p>
-
-      <h3>Werbung</h3>
-      <p>Die Kernfunktionen der App sind kostenlos nutzbar. Vollbildanzeigen können beim Öffnen bestimmter Seiten wie Einstellungen, Kalender oder Qibla erscheinen.</p>
-      <p>Werbung wird nicht beim Lesen des Qurans, in den Gebetszeiten, während des Adhans oder der Benachrichtigungen oder während der Quran-Audiowiedergabe angezeigt.</p>
-      <p>Wenn keine Werbung verfügbar ist, wird die gewünschte Seite normal geöffnet.</p>
-      <p>Werbung wird über Google AdMob bereitgestellt. Google kann bestimmte Geräteinformationen, Werbe-IDs oder Nutzungsdaten erfassen, die zur Auslieferung und Messung von Werbung erforderlich sind, gemäß den Google-Richtlinien, Nutzereinstellungen und Zustimmung.</p>
-
-      <h3>Käufe und Premium-Themes</h3>
-      <p>Diese Version enthält keine In-App-Käufe. Optionale Anpassungsfunktionen wie Premium-Themes können in späteren Versionen hinzugefügt werden.</p>
-      <p>Wenn später optionale digitale Anpassungsfunktionen hinzugefügt werden, wird bei Veröffentlichung über Google Play das offizielle Abrechnungssystem des Stores verwendet und diese Richtlinie bei Bedarf aktualisiert.</p>
-
-      <h3>Datenweitergabe</h3>
-      <p>Wir verkaufen keine Nutzerdaten. Koordinaten werden nicht an einen Gebetszeiten-Server gesendet. Einige Daten können von externen Diensten verarbeitet werden, wenn bestimmte Funktionen genutzt werden, z. B. Standort- und Geocoding-Dienste des Betriebssystems, MP3Quran.net für Rezitationen und Google AdMob für Werbung.</p>
-
-      <h3>Verwendete externe Dienste</h3>
+      <h3>1. Data and permissions used by the app</h3>
       <ul>
-        <li>Standort- und Geocoding-Dienste des Betriebssystems: für Standort und Städtenamen.</li>
-        <li>MP3Quran.net: für Quran-Rezitationen, wenn Audio verwendet wird.</li>
-        <li>Google AdMob: für Vollbildanzeigen auf ausgewählten Seiten.</li>
+        <li><strong>Location:</strong> The app may use location to determine the city, calculate prayer times, and find the Qibla direction. Users can disable location permission from device settings, but some features may not work accurately without it.</li>
+        <li><strong>Notifications:</strong> The app may use notification permission to send prayer time alerts or reminders.</li>
+        <li><strong>Internet access:</strong> The app may use internet access to load data, stream or download Quran audio, update content sources, or open external links. When connecting to external services, those services may receive technical connection data such as IP address and device information needed to complete the request.</li>
+        <li><strong>Local storage:</strong> The app may store preferences locally on the device, such as selected language, theme, display settings, last reading position, or playback preferences.</li>
       </ul>
 
-      <h3>Zukünftige Änderungen</h3>
-      <p>Wir können diese Richtlinie aktualisieren, wenn wir neue Funktionen oder zusätzliche Dienste hinzufügen. Diese Seite wird aktualisiert, wenn wichtige Änderungen auftreten.</p>
+      <h3>2. Ads and Google AdMob</h3>
+      <p>
+        The app may display limited ads using <strong>Google AdMob</strong>. Full-screen ads may appear when opening some non-core pages or options, such as Calendar, Qibla, or selected settings sub-pages.
+      </p>
+      <p>
+        Ads are not shown inside Quran pages, the audio player, the main prayer times page, on app startup, during adhan, or during Quran recitation.
+      </p>
+      <p>
+        Ads may be disabled in some testing versions or in a specific build of the app, but the Google Mobile Ads SDK may still be included for configuration or future activation.
+      </p>
+      <p>
+        When the Google Mobile Ads SDK is included or when ads are enabled, Google may process data such as advertising ID, device information, IP address, user interactions, and diagnostic information for advertising, analytics, security, fraud prevention, and service improvement.
+      </p>
+      <p>
+        Users can manage, reset, or delete the Advertising ID from their Android device settings. Google’s information about Google Mobile Ads SDK data handling is available here:
+        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>.
+      </p>
 
-      <p class="contact">Kontakt:<br>siraj.salah.app@gmail.com</p>
+      <h3>3. Data sharing</h3>
+      <p>
+        We, as the app developer, do not sell user data. However, some data may be processed or shared by third-party services used in the app, such as Google AdMob when the advertising SDK is included or ads are enabled, for advertising, analytics, security, and fraud prevention.
+      </p>
+
+      <h3>4. User choices</h3>
+      <ul>
+        <li>Users can disable location or notification permissions from device settings.</li>
+        <li>Users can manage, reset, or delete the Advertising ID from Android Google settings.</li>
+        <li>Disabling some permissions may reduce the accuracy of some features, such as Qibla direction or prayer times.</li>
+      </ul>
+
+      <h3>5. Children</h3>
+      <p>
+        The app is a general religious app that helps with prayer times and worship-related features such as Qibla, the Hijri calendar, and Quran features. The app is not specifically directed only to children, and we do not knowingly seek to collect children's personal data. Families can manage device permissions and settings according to their use of the app.
+      </p>
+
+      <h3>6. Data security</h3>
+      <p>
+        We aim to use only the data needed to provide app features. No digital service can guarantee complete security, but we work to avoid unnecessary data collection and to use trusted services where possible.
+      </p>
+
+      <h3>7. External links</h3>
+      <p>
+        The app may contain external links, such as the privacy policy page or content sources. External websites are subject to their own privacy policies.
+      </p>
+
+      <h3>8. Changes to this policy</h3>
+      <p>
+        This policy may be updated when features, app behavior, or third-party services change. The updated version will be published on the same privacy policy page.
+      </p>
+
+      <h3>9. Contact</h3>
+      <p>
+        For privacy questions, users can contact the developer through the app listing or the contact information available on Google Play.
+      </p>
+
+      <div class="notice">
+        Official privacy policy link:
+        <a href="https://sirajapps.github.io/siraj-salah-privacy/">https://sirajapps.github.io/siraj-salah-privacy/</a>
+      </div>
     </section>
+
+    <section id="german" lang="de" dir="ltr">
+      <h2>Datenschutzrichtlinie</h2>
+      <p><strong>Zuletzt aktualisiert:</strong> 28. Juni 2026</p>
+
+      <p>
+        <strong>Siraj Al Sala</strong> respektiert die Privatsphäre der Nutzer. Diese Richtlinie erklärt, wie die App mit Berechtigungen und Daten umgeht, wenn Funktionen wie Gebetszeiten, Qibla-Richtung, Hijri-Kalender, Quran-Funktionen, Audiowiedergabe, Benachrichtigungen und begrenzte Werbung verwendet werden.
+      </p>
+
+      <div class="notice">
+        Diese Richtlinie behauptet nicht, dass die App niemals Daten verwendet. Sie soll klar erklären, welche Daten und Berechtigungen von der App oder von Drittanbieterdiensten in der App benötigt werden können.
+      </div>
+
+      <h3>1. Von der App verwendete Daten und Berechtigungen</h3>
+      <ul>
+        <li><strong>Standort:</strong> Die App kann den Standort verwenden, um die Stadt zu bestimmen, Gebetszeiten zu berechnen und die Qibla-Richtung zu finden. Nutzer können die Standortberechtigung in den Geräteeinstellungen deaktivieren, einige Funktionen funktionieren dann jedoch möglicherweise weniger genau.</li>
+        <li><strong>Benachrichtigungen:</strong> Die App kann die Benachrichtigungsberechtigung verwenden, um Gebetszeit-Hinweise oder Erinnerungen zu senden.</li>
+        <li><strong>Internetzugriff:</strong> Die App kann Internetzugriff verwenden, um Daten zu laden, Quran-Audio zu streamen oder herunterzuladen, Inhaltsquellen zu aktualisieren oder externe Links zu öffnen. Beim Verbinden mit externen Diensten können diese Dienste technische Verbindungsdaten wie IP-Adresse und Geräteinformationen erhalten, die zur Bearbeitung der Anfrage erforderlich sind.</li>
+        <li><strong>Lokale Speicherung:</strong> Die App kann Einstellungen lokal auf dem Gerät speichern, zum Beispiel ausgewählte Sprache, Design, Anzeigeeinstellungen, letzte Leseposition oder Wiedergabeeinstellungen.</li>
+      </ul>
+
+      <h3>2. Werbung und Google AdMob</h3>
+      <p>
+        Die App kann begrenzte Werbung über <strong>Google AdMob</strong> anzeigen. Vollbildanzeigen können beim Öffnen einiger nicht zentraler Seiten oder Optionen erscheinen, zum Beispiel Kalender, Qibla oder ausgewählte Unterseiten der Einstellungen.
+      </p>
+      <p>
+        Werbung wird nicht innerhalb der Quran-Seiten, im Audioplayer, auf der Hauptseite der Gebetszeiten, beim Start der App, während des Adhan oder während der Quran-Rezitation angezeigt.
+      </p>
+      <p>
+        In einigen Testversionen oder bestimmten Builds der App kann Werbung deaktiviert sein, während das Google Mobile Ads SDK für Konfiguration oder spätere Aktivierung weiterhin enthalten sein kann.
+      </p>
+      <p>
+        Wenn das Google Mobile Ads SDK enthalten ist oder Werbung aktiviert ist, kann Google Daten wie Werbe-ID, Geräteinformationen, IP-Adresse, Nutzerinteraktionen und Diagnoseinformationen für Werbung, Analysen, Sicherheit, Betrugsprävention und Serviceverbesserung verarbeiten.
+      </p>
+      <p>
+        Nutzer können die Werbe-ID in den Android-Geräteeinstellungen verwalten, zurücksetzen oder löschen. Informationen von Google zur Datenverarbeitung des Google Mobile Ads SDK sind hier verfügbar:
+        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>.
+      </p>
+
+      <h3>3. Weitergabe von Daten</h3>
+      <p>
+        Wir als App-Entwickler verkaufen keine Nutzerdaten. Einige Daten können jedoch von Drittanbieterdiensten, die in der App verwendet werden, verarbeitet oder geteilt werden, zum Beispiel von Google AdMob, wenn das Werbe-SDK enthalten ist oder Werbung aktiviert ist, für Werbung, Analysen, Sicherheit und Betrugsprävention.
+      </p>
+
+      <h3>4. Auswahlmöglichkeiten der Nutzer</h3>
+      <ul>
+        <li>Nutzer können Standort- oder Benachrichtigungsberechtigungen in den Geräteeinstellungen deaktivieren.</li>
+        <li>Nutzer können die Werbe-ID in den Google-Einstellungen von Android verwalten, zurücksetzen oder löschen.</li>
+        <li>Das Deaktivieren einiger Berechtigungen kann die Genauigkeit bestimmter Funktionen verringern, zum Beispiel Qibla-Richtung oder Gebetszeiten.</li>
+      </ul>
+
+      <h3>5. Kinder</h3>
+      <p>
+        Die App ist eine allgemeine religiöse App, die bei Gebetszeiten und gottesdienstbezogenen Funktionen wie Qibla, Hijri-Kalender und Quran-Funktionen hilft. Die App richtet sich nicht ausschließlich an Kinder, und wir beabsichtigen nicht, wissentlich personenbezogene Daten von Kindern zu sammeln. Familien können Geräteberechtigungen und Einstellungen entsprechend ihrer Nutzung der App verwalten.
+      </p>
+
+      <h3>6. Datensicherheit</h3>
+      <p>
+        Wir bemühen uns, nur die Daten zu verwenden, die für die Bereitstellung der App-Funktionen erforderlich sind. Kein digitaler Dienst kann vollständige Sicherheit garantieren, aber wir arbeiten daran, unnötige Datenerfassung zu vermeiden und soweit möglich vertrauenswürdige Dienste zu verwenden.
+      </p>
+
+      <h3>7. Externe Links</h3>
+      <p>
+        Die App kann externe Links enthalten, etwa zur Datenschutzrichtlinie oder zu Inhaltsquellen. Externe Websites unterliegen ihren eigenen Datenschutzrichtlinien.
+      </p>
+
+      <h3>8. Änderungen dieser Richtlinie</h3>
+      <p>
+        Diese Richtlinie kann aktualisiert werden, wenn sich Funktionen, App-Verhalten oder Drittanbieterdienste ändern. Die aktualisierte Version wird auf derselben Datenschutzseite veröffentlicht.
+      </p>
+
+      <h3>9. Kontakt</h3>
+      <p>
+        Bei Fragen zum Datenschutz können Nutzer den Entwickler über den App-Eintrag oder die in Google Play verfügbaren Kontaktinformationen erreichen.
+      </p>
+
+      <div class="notice">
+        Offizieller Link zur Datenschutzrichtlinie:
+        <a href="https://sirajapps.github.io/siraj-salah-privacy/">https://sirajapps.github.io/siraj-salah-privacy/</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Siraj Apps. All rights reserved.
+    </footer>
   </main>
 </body>
 </html>
